@@ -1,0 +1,23 @@
+{
+  "name": "first-fullstack",
+  "version": "1.0.0",
+  "description": "my first fullstack app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "meheret",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.8",
+    "multer": "^1.2.0",
+    "nodemon": "^1.11.0",
+    "p": "^0.2.0",
+    "path": "^0.12.7",
+    "pictoose": "0.0.6"
+  }
+}

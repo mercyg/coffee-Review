@@ -1,0 +1,47 @@
+<!--
+<div class="container-fluid" id="home">
+    <h1 class="hometitle" align="center">Review Coffee Brand</h1>
+</div>
+-->
+<!--
+<div class="container-fluid" id="about">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12">
+            <h1 align="center">About</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-push-2 col-sm-6">
+            <p>Why get confussed with coffee choocesses? See what other people think abou the coffee and you can decide what you want to buy.</p>
+        </div>
+    </div>
+</div>-->
+<main>
+<div class="container-fluid" id="review">
+   <h1 class="text-center">Coffee Brands</h1>
+    <div class="container">
+        <div class="row">
+          <label class="form-control-inline text-center">Search for coffee</label>
+           <input type="text" class="form-control-inline" ng-model="searchCoffee">
+            <div class="col-xs- 12 col-md-4" ng-repeat="item in review | filter: searchCoffee">
+               <div class="panel panel-info">
+                <div class="panel-body"><img ng-src="{{item.image}}"></div>
+                   <div class="panel-footer"><h5 align="center">{{item.coffeeName}}</h5></div>
+                   <p align="left">Product By: {{item.productBy}}</p>
+                   <p align="left">Roast Type: {{item.roast}}</p>
+                   <p>Rating: {{item.rating.toFixed(2)}}</p>
+                  <label class="form-control-inline">What is your rating</label> <input type="number" class="form-control-inline" ng-model="newrating" placeholder="rate the coffee from 1 to 5">
+                  <button type="button" class="btn btn-primary btn-xs" ng-click="updateRating(newrating,$index)">submit</button>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-push-5 col-sm-2">
+                <a href="#about"><button type="button" class="btn btn-primary" >Review your coffee brand</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+</main>

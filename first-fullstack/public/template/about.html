@@ -1,0 +1,62 @@
+<div class="container-fluid" id="about">
+    <div class="row">
+        <div class="col-xs-12 col-sm-7 col-md-offset-2">
+           <h1 text-align="center" id="title">Review Form</h1>
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Coffee Name:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="Coffee Name" ng-model="newreview.coffeeName">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Image url</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="image url" ng-model="newreview.image">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Product By: </label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="product by" ng-model="newreview.productBy">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Roast:</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" placeholder="Roast type" ng-model="newreview.roast">
+                    </div>
+                    <lable class="col-sm-2 control-label">Grind:</lable>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" placeholder="Grind type" ng-model="newreview.gride">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Rating</label>
+                    <div class="col-sm-2">
+                        <input type="number" class="form-control" placeholder="rate your coffee from 1 to 5" ng-model="newreview.allRating">
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="submit" class="btn btn-sucess" ng-click="creatReview(newreview)" >Submit</button>
+                    </div>
+                </div>
+
+                <!--
+    <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+-->
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-push-4">
+            <h3>Sign up and get your personlaized coffee list. </h3>
+        </div>
+    </div>
+</div>
+
+
+
+
